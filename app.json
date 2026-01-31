@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Face Detection App",
+    "slug": "face-detection-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "com.facedetection.app",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera for face detection."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 34,
+            "minSdkVersion": 26,
+            "kotlinVersion": "1.9.24"
+          }
+        }
+      ]
+    ]
+  }
+}
